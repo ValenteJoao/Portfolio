@@ -13,12 +13,12 @@ export function ContentProject({ nome, descricao, foto, tecnologia1, tecnologia2
 
       <ContainerStyle>
         <div className="skill">
-          <SkillsProject skill={tecnologia1} />
-          <SkillsProject skill={tecnologia2} />
+          {tecnologia1 === 'Em Desenvolvimento' && <SkillsProject classname='grey' skill={tecnologia1} /> || <SkillsProject classname='' skill={tecnologia1} />}
+          <SkillsProject classname='' skill={tecnologia2} />
         </div>
       </ContainerStyle>
 
-      <img src={'https://drive.google.com/file/d/1NBbPzj9WlN7xUWeoxlruhRo7k9AS0km9/preview'} />
+      <img src={foto} />
 
     </Container>
   );

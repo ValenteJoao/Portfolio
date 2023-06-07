@@ -6,6 +6,7 @@ import { Projects } from './layout/Projects'
 import { Contact } from './layout/Contato'
 import { Footer } from './components/Footer'
 
+
 function App() {
 
   return (

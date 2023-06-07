@@ -19,35 +19,37 @@ max-width:200px;
 border-radius: 10px;
 margin-bottom: 10px;
 filter: saturate(0);
-
 }
 `
 
 export const DetailsProject = styled.div`
-padding-top: 10px;
+padding-top: 7px;
 display: flex;
 flex-direction: column;
-justify-content: space-around;
+justify-content: flex-start;
 align-items: flex-start;
-height: 24vh;
+height: 18vh;
 width: 16vw ;
-margin-bottom: 10px;
 
 h2{
-  font-size: 1.2em;
+  padding-bottom: 5px;
+  font-size: 0.95em;
+  font-weight: 800;
 }
 
 p{
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 `
 
 export const ContainerStyle = styled.div`
 .skill{
-  width: 16vw ;
+  width: 18vw ;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  padding-top:15px;
+  margin-left:2vw;
 }
 
 
