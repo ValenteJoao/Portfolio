@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
 display: flex;
 flex-direction: column;
@@ -13,6 +14,25 @@ background-color: white;
 -webkit-box-shadow: 8px 10px 13px -4px rgba(105,105,105,1);
 -moz-box-shadow: 8px 10px 13px -4px rgba(105,105,105,1);
 box-shadow: 8px 10px 13px -4px rgba(105,105,105,1);
+cursor: pointer;
+
+@keyframes borderAnimation{
+  0% {
+    border-color:rgba(0, 0, 0, 0.5) ;
+  }
+  50% {
+    border-color: #FFE400;
+  }
+  100% {
+    border-color:rgba(0, 0, 0, 0.5);
+  }}
+
+  &:hover {
+      animation-name: borderAnimation;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
 
 img{
 max-width:200px;

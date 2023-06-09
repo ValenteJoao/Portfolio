@@ -1,12 +1,14 @@
-import { FaLinkedin, FaGithub, FaBehance } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaVimeo } from 'react-icons/fa'
 
 import { PageAbout, AboutContent, ContainerAboutSkills, LineAbout, SectionAbout, SkillsContainer, SocialmediaContainer, Skills } from './style';
 import { SkillsContainers } from '../../components/SkillsContainers';
 
 
 export function About() {
+
   return (
     <PageAbout id="QuemSouEu">
+
       <AboutContent>
         <h2>QUEM SOU EU ?</h2>
         <div></div>
@@ -15,6 +17,7 @@ export function About() {
       </AboutContent>
 
       <ContainerAboutSkills>
+        
         <SectionAbout>
           <LineAbout></LineAbout>
           <p>
@@ -41,9 +44,15 @@ export function About() {
           </Skills>
 
           <SocialmediaContainer>
-            <FaLinkedin size={22} style={{ fill: 'white', cursor: 'pointer' }} />
-            <FaGithub size={22} style={{ fill: 'white', cursor: 'pointer' }} />
-            <FaBehance size={22} style={{ fill: 'white', cursor: 'pointer' }} />
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-alexandre-valente-32b45b21b/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={22} style={{ fill: 'white', cursor: 'pointer' }} />
+            </a>
+            <a href="https://github.com/ValenteJoao" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={22} style={{ fill: 'white', cursor: 'pointer' }} />
+            </a>
+            <a href="https://vimeo.com/user172878477" target="_blank" rel="noopener noreferrer">
+              <FaVimeo size={22} style={{ fill: 'white', cursor: 'pointer' }} />
+            </a>
           </SocialmediaContainer>
 
         </SkillsContainer>

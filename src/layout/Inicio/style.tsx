@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Background from '../../assets/background.jpg';
 
-export const ContainerHome = styled.main`
+export const HomeContainer = styled.main`
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -34,9 +34,10 @@ button{
   margin-bottom: 70px;
   animation: scale-down-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 `
 
-export const ContainerText = styled.div`
+export const TextContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;

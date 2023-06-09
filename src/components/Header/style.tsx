@@ -80,6 +80,11 @@ font-size: 0.8em;
 animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
+.active {
+  border-bottom: 2px solid  #FFE400;
+
+}
+
 a:hover{
 
   border-bottom: 1px solid #FFE400;

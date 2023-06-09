@@ -5,12 +5,14 @@ type projectProps = {
   nome: string;
   descricao: string;
   foto: string;
-  tecnologia1: string
-  tecnologia2: string
+  tecnologia1: string;
+  tecnologia2: string;
 };
 
 
 export function ContentProject({ nome, descricao, foto, tecnologia1, tecnologia2 }: projectProps) {
+
+
   return (
     <Container>
 

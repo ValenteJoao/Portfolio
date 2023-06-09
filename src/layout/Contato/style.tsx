@@ -9,10 +9,19 @@ height: 65vh;
 margin-bottom: 50px;
 padding-top: 12vh;
 
+.copiado{
+  position: absolute;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 0.7em;
+  color: white;
+  background-color: #343434;
+}
 a{color: #7F7F7F;
   font-weight:900;
   cursor: pointer;
 }
+
 
 .InfoContainer{
   display: flex;
