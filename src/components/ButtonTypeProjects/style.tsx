@@ -17,7 +17,28 @@ p{
   font-size: 0.8rem;
   color: #000000;
   margin-left: 10px;
-  color:black;
+}
+
+`
+
+export const ContainerActive = styled.button`
+display: flex;
+align-items: center;
+justify-content: center;
+width: 120px;
+height: 35px;
+background-color: #E2E2E2;
+border-radius: 16px;
+margin: 3px;
+border: none;
+cursor: pointer;
+filter: drop-shadow(0px 4px 0px #FFE400);
+
+p{
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #000000;
+  margin-left: 10px;
 }
 
 `

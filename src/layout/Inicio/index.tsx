@@ -1,4 +1,5 @@
 import Lottie from "lottie-react";
+
 import { ContainerHome, ContainerText, styleScrollDown } from './style';
 import scrollDown from '../../animations/scrollDown.json'
 

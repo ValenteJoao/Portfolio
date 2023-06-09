@@ -1,6 +1,7 @@
+import { FaLinkedin, FaGithub, FaBehance } from 'react-icons/fa'
+
 import { PageAbout, AboutContent, ContainerAboutSkills, LineAbout, SectionAbout, SkillsContainer, SocialmediaContainer, Skills } from './style';
 import { SkillsContainers } from '../../components/SkillsContainers';
-import { FaLinkedin, FaGithub, FaBehance } from 'react-icons/fa'
 
 
 export function About() {

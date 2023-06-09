@@ -1,6 +1,11 @@
 import { Container } from "./style";
 
-export function SkillsProject({ skill, classname }) {
+type skillsProjectProps = {
+  skill: string;
+  classname: string;
+};
+
+export function SkillsProject({ skill, classname }: skillsProjectProps) {
   return (
     <Container>
       <div className={classname}>

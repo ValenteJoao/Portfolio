@@ -8,24 +8,52 @@ import { ButtonNav } from "../../components/ButtonTypeProjects";
 import { ContentProject } from "../../components/Project";
 import { Container, TitleContainer, NavContainer, ContainerProjects } from "./style";
 
+interface Projetos {
+  id: number;
+  nome: string;
+  descricao: string;
+  foto: string;
+  tecnologia1: string;
+  tecnologia2: string;
+}
 
 export function Projects() {
 
-  const [projetos, setProjetos] = useState<Projetos[]>([]);
+  const [projetosCode, setProjetosCode] = useState<Projetos[]>([]);
+  const [projetosVideos, setProjetosVideos] = useState<Projetos[]>([]);
+  const [buttonMenu, setButtonMenu] = useState(true);
 
   const db = getFirestore(App);
 
   useEffect(() => {
     async function getProjects(db) {
-      const projectCol = collection(db, 'code');
-      const project = await getDocs(projectCol);
-      const projects = project.docs.map(doc => doc.data());
+      const collectionCode = collection(db, 'code');
+      const collectionVideo = collection(db, 'Videos');
+      const projectCode = await getDocs(collectionCode);
+      const projectVideo = await getDocs(collectionVideo);
 
-      return setProjetos(projects);
+      const projectsCode = projectCode.docs.map(doc => doc.data());
+      const projectsVideos = projectVideo.docs.map(doc => doc.data());
+
+      setProjetosCode(projectsCode);
+      setProjetosVideos(projectsVideos);
+      return
+
     }
     getProjects(db)
 
   }, [])
+
+
+  function touchableMenu() {
+    if (buttonMenu) {
+      setButtonMenu(false)
+    }
+    else {
+      setButtonMenu(true)
+    }
+
+  }
 
   return (
     <Container id="projetos">
@@ -35,13 +63,61 @@ export function Projects() {
       </TitleContainer>
 
       <NavContainer>
-        <ButtonNav name='Code' icon={<FaLaptopCode size={15} />} />
-        <ButtonNav name='Video' icon={<FaVideo size={15} />} />
+
+        {buttonMenu ? (
+          <>
+            <ButtonNav
+              click={touchableMenu}
+              activeButton={buttonMenu}
+              name='Code'
+              icon={<FaLaptopCode size={15} />}
+            />
+            <ButtonNav
+              click={touchableMenu}
+              activeButton={!buttonMenu}
+              name='Video'
+              icon={<FaVideo size={15} />}
+            />
+          </>
+        ) : (
+          <>
+            <ButtonNav
+              click={touchableMenu}
+              activeButton={buttonMenu}
+              name='Code'
+              icon={<FaLaptopCode size={15} />}
+            />
+            <ButtonNav
+              click={touchableMenu}
+              activeButton={!buttonMenu}
+              name='Video'
+              icon={<FaVideo size={15} />}
+            />
+          </>
+        )}
+
       </NavContainer>
 
       <ContainerProjects>
-        {Object.values(projetos).map((projeto) => (
-          <ContentProject key={projeto.id} nome={projeto.nome} descricao={projeto.descricao} foto={projeto.foto} tecnologia1={projeto.tecnologia1} tecnologia2={projeto.tecnologia2} />
+        {buttonMenu && Object.values(projetosCode).map((projeto) => (
+
+          <ContentProject
+            key={projeto.id}
+            nome={projeto.nome}
+            descricao={projeto.descricao}
+            foto={projeto.foto}
+            tecnologia1={projeto.tecnologia1}
+            tecnologia2={projeto.tecnologia2} />
+
+        )) || Object.values(projetosVideos).map((projeto) => (
+
+          <ContentProject key={projeto.id}
+            nome={projeto.nome}
+            descricao={projeto.descricao}
+            foto={projeto.foto}
+            tecnologia1={projeto.tecnologia1}
+            tecnologia2={projeto.tecnologia2} />
+
         ))}
       </ContainerProjects>
 

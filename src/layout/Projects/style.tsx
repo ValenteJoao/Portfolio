@@ -44,10 +44,6 @@ height: 5vh;
 width: 80vw;
 margin-top: 25px;
 
-.active{
-  filter: drop-shadow(0px 4px 0px #FFE400);
-}
-
 button:hover{
   filter: drop-shadow(0px 4px 0px #FFE400);
 }

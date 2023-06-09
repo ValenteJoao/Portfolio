@@ -1,8 +1,16 @@
 import { Container, DetailsProject, ContainerStyle } from "./style";
 import { SkillsProject } from "../SkillsProject";
 
+type projectProps = {
+  nome: string;
+  descricao: string;
+  foto: string;
+  tecnologia1: string
+  tecnologia2: string
+};
 
-export function ContentProject({ nome, descricao, foto, tecnologia1, tecnologia2 }) {
+
+export function ContentProject({ nome, descricao, foto, tecnologia1, tecnologia2 }: projectProps) {
   return (
     <Container>
 

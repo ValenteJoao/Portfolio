@@ -1,5 +1,6 @@
 import { FaWhatsapp, FaArrowUp } from "react-icons/fa"
 import { FiSend, FiCopy } from "react-icons/fi"
+
 import { Container, TitleContainer, MailContainer, ZapContainer } from "./style";
 
 export function Contact() {

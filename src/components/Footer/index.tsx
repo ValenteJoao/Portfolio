@@ -1,5 +1,6 @@
-import { Container, Content } from "./style";
 import { FaLinkedin, FaGithub, FaBehance } from 'react-icons/fa'
+
+import { Container, Content } from "./style";
 
 export function Footer() {
   return (

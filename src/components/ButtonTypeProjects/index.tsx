@@ -1,13 +1,17 @@
-import { Container } from "./style";
+import { Container, ContainerActive } from "./style";
 
+type buttonProps = {
+  name: string;
+  icon: JSX.Element;
+  activeButton: Boolean;
+  click: any;
+};
 
+export function ButtonNav({ name, icon, activeButton, click }: buttonProps) {
 
-export function ButtonNav({ name, icon }) {
+  return (<>
+    {activeButton ? <ContainerActive>{icon}<p>{name}</p></ContainerActive> : <Container onClick={click}>{icon}<p>{name}</p></Container>}
 
-  return (
-    <Container>
-      {icon}
-      <p>{name}</p>
-    </Container>
+  </>
   );
 }
