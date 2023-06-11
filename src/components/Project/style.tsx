@@ -20,7 +20,7 @@ export const Container = styled.div`
     cursor: none;
   }
 
-  @keyframes borderAnimation {
+  @keyframes borderAnimationYellow {
     0% {
       border-color: rgba(0, 0, 0, 0.5);
     }
@@ -33,14 +33,14 @@ export const Container = styled.div`
   }
 
   &:hover {
-    animation-name: borderAnimation;
+    animation-name: borderAnimationYellow;
     animation-duration: 1.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
 
   @media screen and (max-width: 850px) {
-    animation-name: borderAnimation;
+    animation-name: borderAnimationYellow;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
