@@ -50,7 +50,7 @@ export function Contact() {
           <div onClick={copiarEmail} style={{ cursor: 'pointer' }}>
             <h5>{email}</h5>
             <FiCopy />
-            {copiado && <p className='copiado'>URL copiada para a área de transferência!</p>}
+            {copiado && <p className='copiado'>E-mail copiado para a área de transferência!</p>}
           </div>
         </MailContainer>
 
