@@ -12,12 +12,12 @@ export function About() {
       <AboutContent>
         <h2>QUEM SOU EU ?</h2>
         <div></div>
-        <p>Neste espaço, você encontrará informações sobre a minha área de atuação e minhas <br />
+        <p>Neste espaço, você encontrará informações sobre a minha área de atuação e minhas
           habilidades atuais, com foco principalmente em programação e tecnologia.</p>
       </AboutContent>
 
       <ContainerAboutSkills>
-        
+
         <SectionAbout>
           <LineAbout></LineAbout>
           <p>

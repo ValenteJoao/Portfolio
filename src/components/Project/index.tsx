@@ -23,7 +23,7 @@ export function ContentProject({ nome, descricao, foto, tecnologia1, tecnologia2
 
       <ContainerStyle>
         <div className="skill">
-          {tecnologia1 === 'Em Desenvolvimento' && <SkillsProject classname='grey' skill={tecnologia1} /> || <SkillsProject classname='' skill={tecnologia1} />}
+          {tecnologia1 === 'Em Desenvolvimento' && <SkillsProject classname='green' skill={tecnologia1} /> || <SkillsProject classname='' skill={tecnologia1} />}
           <SkillsProject classname='' skill={tecnologia2} />
         </div>
       </ContainerStyle>
