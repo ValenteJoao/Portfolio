@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { Container, Perfil, Menu } from './style';
 import fotoPerfil from '../../assets/fotoPerfil.png';
 
-export function Header() {
-  const [activeSection, setActiveSection] = useState('');
+export function Header(): JSX.Element {
+  const [activeSection, setActiveSection] = useState<string>('');
 
   useEffect(() => {
     function handleScroll() {
@@ -26,9 +26,9 @@ export function Header() {
     };
   }, []);
 
-  function scrollToPages(id) {
+  function scrollToPages(id: string) {
     const projectsSection = document.getElementById(id);
-    projectsSection.scrollIntoView({ behavior: 'smooth' });
+    projectsSection?.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
