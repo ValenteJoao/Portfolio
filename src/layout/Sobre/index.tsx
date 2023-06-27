@@ -44,7 +44,7 @@ export function About() {
           </Skills>
 
           <SocialmediaContainer>
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-alexandre-valente-32b45b21b/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-valente/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={22} style={{ fill: 'white', cursor: 'pointer' }} />
             </a>
             <a href="https://github.com/ValenteJoao" target="_blank" rel="noopener noreferrer">

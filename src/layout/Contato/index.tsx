@@ -37,7 +37,7 @@ export function Contact() {
         <h3>CONTATO</h3>
       </TitleContainer>
       <div className="InfoContainer">
-        <a href="https://api.whatsapp.com/send?phone=5516997263468" target="_blank" rel="noopener noreferrer">
+        <a href="https://api.whatsapp.com/send?phone=5516981652134" target="_blank" rel="noopener noreferrer">
           <ZapContainer>
             <FaWhatsapp size={20} />
             <p>Vamos Conversar</p>
