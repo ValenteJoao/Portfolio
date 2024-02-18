@@ -34,13 +34,14 @@ export function About() {
             <SkillsContainers skill='HTML' />
             <SkillsContainers skill='CSS' />
             <SkillsContainers skill='JavaScript' />
+            <SkillsContainers skill='TypeScript' />
+            <SkillsContainers skill='NextJS' />
             <SkillsContainers skill='REACT' />
             <SkillsContainers skill='REACT NATIVE' />
             <SkillsContainers skill='NODE JS' />
             <SkillsContainers skill='GIT' />
             <SkillsContainers skill='GITHUB' />
-            <SkillsContainers skill='ADOBE CC' />
-            <SkillsContainers skill='DAVINCI RESOLVE' />
+            <SkillsContainers skill='FIREBASE' />
           </Skills>
 
           <SocialmediaContainer>
