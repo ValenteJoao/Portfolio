@@ -33,9 +33,9 @@ export function About() {
           <Skills>
             <SkillsContainers skill='HTML' />
             <SkillsContainers skill='CSS' />
-            <SkillsContainers skill='JavaScript' />
-            <SkillsContainers skill='TypeScript' />
-            <SkillsContainers skill='NextJS' />
+            <SkillsContainers skill='JAVASCRIPT' />
+            <SkillsContainers skill='TYPESCRIPT' />
+            <SkillsContainers skill='NEXTJS' />
             <SkillsContainers skill='REACT' />
             <SkillsContainers skill='REACT NATIVE' />
             <SkillsContainers skill='NODE JS' />
