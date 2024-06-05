@@ -1,4 +1,4 @@
-# Meu Portfólio - Site Pessoal
+# Meu Portfólio
 
 ![Logo do Projeto](/src/assets/favicon.ico)
 
