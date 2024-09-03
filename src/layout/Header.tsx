@@ -59,7 +59,9 @@ export function Header() {
         <a
           onClick={() => scrollToPages("inicio")}
           className={`${
-            activeSection === "inicio" ? "border-b-2 border-[#FFE400]" : ""
+            activeSection === "inicio"
+              ? "md:border-b-2 md:border-[#FFE400]"
+              : ""
           } cursor-pointer hover:border-b-2 hover:border-[#FFE400] hover:transition-all`}
         >
           Inicio
@@ -67,7 +69,9 @@ export function Header() {
         <a
           onClick={() => scrollToPages("QuemSouEu")}
           className={`${
-            activeSection === "QuemSouEu" ? "border-b-2 border-[#FFE400]" : ""
+            activeSection === "QuemSouEu"
+              ? "md:border-b-2 md:border-[#FFE400]"
+              : ""
           } cursor-pointer hover:border-b-2 hover:border-[#FFE400] hover:transition-all`}
         >
           Quem sou eu
@@ -75,7 +79,9 @@ export function Header() {
         <a
           onClick={() => scrollToPages("projetos")}
           className={`${
-            activeSection === "projetos" ? "border-b-2 border-[#FFE400]" : ""
+            activeSection === "projetos"
+              ? "md:border-b-2 md:border-[#FFE400]"
+              : ""
           } cursor-pointer hover:border-b-2 hover:border-[#FFE400] hover:transition-all`}
         >
           Projetos
@@ -83,7 +89,9 @@ export function Header() {
         <a
           onClick={() => scrollToPages("contato")}
           className={`${
-            activeSection === "contato" ? "border-b-2 border-[#FFE400]" : ""
+            activeSection === "contato"
+              ? "md:border-b-2 md:border-[#FFE400]"
+              : ""
           } cursor-pointer hover:border-b-2 hover:border-[#FFE400] hover:transition-all`}
         >
           Contato
