@@ -32,7 +32,7 @@ export function Projects() {
       foto: redbull,
       tecnologia1: "Jquery",
       tecnologia2: "Asp.Net",
-      link: "https://www.redbullexperience.com.br",
+      link: "https://www.redbullbragantinoexperience.com/",
     },
     {
       id: 3,
