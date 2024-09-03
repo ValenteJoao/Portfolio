@@ -7,6 +7,7 @@ import bahia from "../assets/bahia.png";
 import redbull from "../assets/redbull.png";
 import realrock from "../assets/realrock.png";
 import mmg from "../assets/mmg.jpg";
+import Loader from "../components/loader";
 
 export function Projects() {
   const [projetos, setProjetos] = useState<Projeto[]>([]);
@@ -70,7 +71,7 @@ export function Projects() {
     setTimeout(() => {
       setProjetos(projetosCode);
       setLoading(false);
-    }, 2000);
+    }, 4000);
   }, []);
 
   return (
@@ -88,12 +89,14 @@ export function Projects() {
 
       <div className="flex flex-row w-full items-center justify-center gap-2">
         <ButtonNav
+          status={false}
           click={() => touchableMenu("code")}
           activeButton={buttonMenu}
           name="Code"
           icon={<FaLaptopCode fill="white" size={15} />}
         />
         <ButtonNav
+          status={true}
           click={() => touchableMenu("figma")}
           activeButton={!buttonMenu}
           name="Figma"
@@ -103,7 +106,7 @@ export function Projects() {
 
       <div className="flex justify-around items-center flex-row flex-wrap my-10 gap-4 max-md:gap-8">
         {loading ? (
-          <p>Carregando...</p>
+          <Loader />
         ) : (
           projetos.map((projeto) => (
             <a
