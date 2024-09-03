@@ -9,7 +9,7 @@ export function Home() {
   return (
     <main
       id="inicio"
-      className="flex flex-col items-center justify-center max-md:h-full h-screen max-md:px-5 px-24 max-md:py-20 py-24 gap-10 bg-cover shadow-lg bg-bg-video-bk"
+      className="flex flex-col bg-zinc-950 items-center justify-center max-md:h-full h-screen max-md:px-5 px-24 max-md:py-20 py-24 gap-10 bg-cover shadow-lg bg-bg-video-bk"
     >
       <div className="max-md:flex-col max-md:text-center flex max-md:gap-0 gap-7 items-center justify-center w-full mt-20">
         <img src={fotoPerfil} alt="Foto de Perfil" className="max-w-40" />
