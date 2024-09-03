@@ -1,8 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
-  color: #333333;
+  color: #ffffff;
+}
+
+.LineAbout{
+  height: 60px;
+  background: #ffe400;
+  box-shadow: 0px 52px 0px #ffffff;
+  border-radius: 50px;
+}
+
+.active {
+  border-bottom: 2px solid #FFE400;
+}
+
+.filterYellow{
+  filter: drop-shadow(16px 12px 0px #ffe400);
+}
+
+.filterYellow2{
+  filter: drop-shadow(0px 4px 0px #ffe400);
+}
+
+@keyframes borderAnimationYellow {
+  0% {
+    border-color: rgba(82, 82, 82, 0.5);
+  }
+  50% {
+    border-color: #FFE400;
+  }
+  100% {
+    border-color: rgba(82, 82, 82, 0.5);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse{
+  animation: pulse 1.5s infinite;
+}
+
+.project:hover {
+  animation-name: borderAnimationYellow;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.Toastify__toast-body > div{
+  color: black !important;
 }
