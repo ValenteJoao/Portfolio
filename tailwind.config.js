@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        "bg-video": "url('./src/assets/bg-site.gif')",
+        "bg-video": "url('https://github.com/ValenteJoao/Portfolio/blob/main/src/assets/bg-site-black.gif?raw=true')",
         "bg-video-bk": "url('./src/assets/bg-site-black.gif')",
       }
     },
