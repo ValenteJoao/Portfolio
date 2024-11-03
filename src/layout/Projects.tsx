@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaFigma, FaLaptopCode } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
 import { ButtonNav } from "../components/btnType";
 import { ContentProject } from "../components/Projects";
 
