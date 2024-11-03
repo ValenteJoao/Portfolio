@@ -16,7 +16,7 @@ export function ContentProject({
   tecnologia2,
 }: projectProps) {
   return (
-    <div className="project flex flex-col items-center justify-between h-[350px] w-64 border-2 border-zinc-200 rounded-2xl cursor-pointer p-5 shadow-lg hover:scale-105 transform transition duration-300 ease-in-out">
+    <div className="project flex flex-col items-center justify-between h-[350px] w-64 border-2 border-zinc-200 rounded-2xl cursor-pointer p-6 shadow-lg hover:scale-105 transform transition duration-300 ease-in-out">
       <div className="flex flex-col gap-2">
         <h2 className="font-black leading-5">{nome}</h2>
         <p className="text-sm">{descricao}</p>
@@ -30,7 +30,7 @@ export function ContentProject({
           <SkillsProject classname="" skill={tecnologia2} />
         </div>
 
-        <img src={foto} className="rounded-md" />
+        <img src={foto} className="rounded-md max-h-40" />
       </div>
     </div>
   );

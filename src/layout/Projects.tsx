@@ -7,6 +7,7 @@ import bahia from "../assets/bahia.png";
 import redbull from "../assets/redbull.png";
 import realrock from "../assets/realrock.png";
 import mmg from "../assets/mmg.jpg";
+import achabitos from "../assets/ac-habitos.png";
 import Loader from "../components/loader";
 
 export function Projects() {
@@ -36,6 +37,16 @@ export function Projects() {
     },
     {
       id: 3,
+      nome: "AC Hábitos de Sucesso",
+      descricao:
+        "Site para venda de cursos e treinamentos criado com react, typescript, tailwindcss",
+      foto: achabitos,
+      tecnologia1: "ReactJs",
+      tecnologia2: "TailwindCss",
+      link: "https://www.habitosdesucesso.com/",
+    },
+    {
+      id: 4,
       nome: "Real Rock",
       descricao:
         "Site de estudo que lista as melhores bandas de rock usando NextJs e TailwindCss",
@@ -45,7 +56,7 @@ export function Projects() {
       link: "https://real-rock.vercel.app",
     },
     {
-      id: 4,
+      id: 5,
       nome: "Meme Memory Game",
       descricao: "Meu primeiro projeto front-end 100% Vanilla 😁",
       foto: mmg,
@@ -95,20 +106,17 @@ export function Projects() {
           name="Code"
           icon={<FaLaptopCode fill="white" size={15} />}
         />
-        <ButtonNav
-          status={true}
-          click={() => touchableMenu("figma")}
-          activeButton={!buttonMenu}
-          name="Figma"
-          icon={<FaFigma fill="white" size={15} />}
-        />
+
       </div>
 
-      <div className="flex justify-around items-center flex-row flex-wrap my-10 gap-4 max-md:gap-8">
-        {loading ? (
+      {loading ? (
+        <div className="flex item-center my-10">
           <Loader />
-        ) : (
-          projetos.map((projeto) => (
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-5 my-10 justify-center items-center">
+
+          {projetos.map((projeto) => (
             <a
               href={projeto.link}
               target="_blank"
@@ -123,9 +131,9 @@ export function Projects() {
                 tecnologia2={projeto.tecnologia2}
               />
             </a>
-          ))
-        )}
-      </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
