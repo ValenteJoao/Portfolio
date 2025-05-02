@@ -2,15 +2,9 @@ import Lottie from "lottie-react";
 
 import scrollDown from "../animations/scrollDown.json";
 import fotoPerfil from "../assets/fotoPerfil.png";
-import { FaFileDownload } from "react-icons/fa";
 import whatsappIcon from "../assets/zap.svg";
 
 export function Home() {
-
-  // abre o pdf do curriculo
-  function openPdf() {
-    window.open("https://drive.google.com/file/d/185tB-EQI_XWwIZ52JOYZYhzYxPntlv73/view");
-  }
 
   return (
     <main
@@ -28,19 +22,13 @@ export function Home() {
             VALENTE
           </h2>
           <div className="flex gap-4 max-md:flex-col max-md:w-full">
-            <button onClick={
-              openPdf
-            } className="group text-white px-5 max-md:py-4 py-2 border border-yellow-300 rounded-3xl flex items-center gap-2 transition-all max-md:w-full w-48 justify-center hover:text-black hover:bg-yellow-300 hover:scale-105 transform duration-300 ease-in-out">
-              <FaFileDownload className="fill-white group-hover:fill-black transition-colors duration-300 ease-in-out" />
-              Currículo
-            </button>
             <a
               target="_blank"
               href="https://api.whatsapp.com/send?phone=5516981652134"
-              className="px-5 py-2 max-md:py-4 text-black bg-yellow-300 rounded-3xl flex items-center gap-2 transition-all max-md:w-full w-48 justify-center hover:bg-yellow-200 hover:scale-105 transform duration-300 ease-in-out"
+              className="px-6 py-2 max-md:py-4 text-black bg-yellow-300 rounded-3xl flex items-center gap-2 transition-all max-md:w-full justify-center hover:bg-yellow-200 hover:scale-105 transform duration-300 ease-in-out"
             >
               <img src={whatsappIcon} alt="" />
-              Whatsapp
+              Converse comigo
             </a>
           </div>
         </div>

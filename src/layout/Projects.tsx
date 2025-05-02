@@ -8,6 +8,8 @@ import redbull from "../assets/redbull.png";
 import realrock from "../assets/realrock.png";
 import mmg from "../assets/mmg.jpg";
 import achabitos from "../assets/ac-habitos.png";
+import empresa2ms from "../assets/2ms.png";
+import vagas from "../assets/vagas-2ms.png";
 import Loader from "../components/loader";
 
 export function Projects() {
@@ -17,54 +19,84 @@ export function Projects() {
 
   const projetosCode: Projeto[] = [
     {
+      id: 2,
+      nome: "Massa Bruta - Red Bull",
+      descricao:
+        "Portal oficial de sócio torcedor do Red Bull Bragantino. Fui responsável por toda a concepção UX/UI e desenvolvimento completo da plataforma utilizando .NET, JQuery e Tailwind. Experiência moderna e otimizada para alto tráfego.",
+      foto: redbull,
+      tecnologia1: "Tailwind",
+      tecnologia2: "UI/UX",
+      tecnologia3: ".Net",
+      link: "https://www.massabruta.com.br/",
+    },
+    {
       id: 1,
       nome: "Sócio Esquadrão - Bahia Esporte Clube",
       descricao:
-        "Site de sócio torcedor do Bahia Esporte Clube criado com Asp.Net, JQuery",
+        "Sistema robusto de adesão e gestão de sócios para o Bahia. Desenvolvido com Asp.Net e JQuery, proporcionando navegação eficiente e integração com sistemas de pagamento e gestão de torcedores.",
       foto: bahia,
       tecnologia1: "Asp.Net",
       tecnologia2: "C#",
+      tecnologia3: "JQuery",
       link: "https://www.socioesquadrao.com.br",
     },
     {
-      id: 2,
-      nome: "Red Bull Experience",
-      descricao: "Site de experiência da Red Bull criado asp.net, JQuery, CSS",
-      foto: redbull,
-      tecnologia1: "Jquery",
-      tecnologia2: "Asp.Net",
-      link: "https://www.redbullbragantinoexperience.com/",
+      id: 7,
+      nome: "Site 2Morrow Sports",
+      descricao:
+        "Site institucional da 2Morrow Sports, com visual moderno e responsivo. Desenvolvido com foco em performance, usando React, TypeScript e Tailwind.",
+      foto: empresa2ms,
+      tecnologia1: "React",
+      tecnologia2: "Tailwind",
+      tecnologia3: "Typescript",
+      link: "https://www.2morrowsports.com.br",
+    },
+    {
+      id: 6,
+      nome: "Sistema de Gerenciamento de Vagas - 2MS",
+      descricao:
+        "Sistema completo de recrutamento com análise via Inteligência Artificial. Criei a interface e estrutura backend com Fastify, React, Tailwind e SQL Server. Automatiza cadastros, entrevistas e avaliações de candidatos.",
+      foto: vagas,
+      tecnologia1: "Fastify",
+      tecnologia2: "IA",
+      tecnologia3: "SQLServer",
+      link: "https://corp.2morrowsports.com.br/login",
     },
     {
       id: 3,
       nome: "AC Hábitos de Sucesso",
       descricao:
-        "Site para venda de cursos e treinamentos criado com react, typescript, tailwindcss",
+        "Landing page profissional para cursos e treinamentos de desenvolvimento pessoal. Visual atrativo e fluidez garantida com React, TypeScript e Tailwind.",
       foto: achabitos,
-      tecnologia1: "ReactJs",
-      tecnologia2: "TailwindCss",
+      tecnologia1: "React",
+      tecnologia2: "Tailwind",
+      tecnologia3: "Typescript",
       link: "https://www.habitosdesucesso.com/",
     },
     {
       id: 4,
       nome: "Real Rock",
       descricao:
-        "Site de estudo que lista as melhores bandas de rock usando NextJs e TailwindCss",
+        "Projeto pessoal que reúne as melhores bandas de rock com foco em performance e usabilidade. Desenvolvido com Next.js, Tailwind e TypeScript.",
       foto: realrock,
       tecnologia1: "NextJs",
-      tecnologia2: "TailwindCss",
+      tecnologia2: "Tailwind",
+      tecnologia3: "Typescript",
       link: "https://real-rock.vercel.app",
     },
     {
       id: 5,
       nome: "Meme Memory Game",
-      descricao: "Meu primeiro projeto front-end 100% Vanilla 😁",
+      descricao:
+        "Meu primeiro projeto 100% Vanilla! Um jogo da memória divertido e responsivo criado com HTML, CSS e JavaScript puro. Ideal para praticar lógica e DOM.",
       foto: mmg,
       tecnologia1: "HTML",
       tecnologia2: "Javascript",
+      tecnologia3: "CSS",
       link: "https://valentejoao.github.io/jogommg/",
     },
   ];
+
 
   const projetosFigma: Projeto[] = [];
 
@@ -114,7 +146,7 @@ export function Projects() {
           <Loader />
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-5 my-10 justify-center items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 my-10 justify-center items-center">
 
           {projetos.map((projeto) => (
             <a
@@ -129,6 +161,7 @@ export function Projects() {
                 foto={projeto.foto}
                 tecnologia1={projeto.tecnologia1}
                 tecnologia2={projeto.tecnologia2}
+                tecnologia3={projeto.tecnologia3}
               />
             </a>
           ))}
