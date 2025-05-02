@@ -9,7 +9,7 @@ export function Home() {
   return (
     <main
       id="inicio"
-      className="flex flex-col bg-gray-950 items-center justify-center h-screen max-md:px-5 px-24 max-md:py-20 py-24 gap-10 bg-cover shadow-lg bg-bg-video-bk"
+      className="flex flex-col bg-gradient-to-b from-gray-950 to-[#12061e] items-center justify-center h-screen max-md:px-5 px-24 max-md:py-20 py-24 gap-10 bg-cover shadow-lg"
     >
       <div className="flex-col text-center flex gap-0 items-center justify-center w-full mt-20">
         <img src={fotoPerfil} alt="Foto de Perfil" className="max-w-32" />
