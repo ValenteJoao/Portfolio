@@ -20,7 +20,7 @@ export function About() {
           <div className="LineAbout w-10"></div>
           <div className="flex flex-col gap-8">
             <p className="text-sm">
-              Sou um desenvolvedor <strong>Front-End</strong> apaixonado por
+              Sou um desenvolvedor <strong>Full Stack</strong> apaixonado por
               tecnologia e design, sempre buscando criar{" "}
               <strong>experiências</strong> digitais que realmente façam a
               diferença. Adoro transformar ideias em interfaces bonitas,
