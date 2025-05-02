@@ -24,18 +24,17 @@ export function About() {
               tecnologia e design, sempre buscando criar{" "}
               <strong>experiências</strong> digitais que realmente façam a
               diferença. Adoro transformar ideias em interfaces bonitas,
-              intuitivas e cheias de funcionalidade. Se você curte ver códigos
-              bem feitos, dê uma passada no meu <strong>GitHub</strong>. Lá,
-              compartilho o que ando criando e resolvendo no dia a dia, sempre
-              buscando soluções inovadoras. Dá uma olhada para conhecer meu
-              estilo e como gosto de trabalhar. Estou sempre aberto para novos{" "}
+              intuitivas e cheias de funcionalidade. Se você curte ver códigos,
+              dê uma passada no meu <strong>GitHub</strong>. Lá,
+              compartilho o que ando criando e resolvendo no dia a dia.
+              Dá uma olhada para conhecer meu estilo e como gosto de trabalhar.
+              Estou sempre disponível para novos{" "}
               <strong>desafios</strong>, então se tiver algum projeto bacana em
-              mente, bora conversar! Vamos juntos transformar suas ideias em
-              algo incrível!
+              mente, bora conversar!
             </p>
             <p className="text-sm">
               Atualmente atuo como desenvolvedor front end pela a empresa{" "}
-              <strong>2morrow sports</strong> realizando a manutenção e
+              <strong>2Morrow Sports</strong> realizando a manutenção e
               desenvolvimento de novas features para o sistema de gestão de
               socios torcedores dos clubes de futebol.
             </p>
