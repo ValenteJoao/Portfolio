@@ -28,14 +28,14 @@ export function Contact() {
 
   return (
     <div
-      className="flex flex-col items-center bg-zinc-900 justify-around px-24 py-32 max-md:px-5 max-md:py-20"
+      className="flex flex-col items-center bg-gray-950 justify-around px-24 pt-32 max-md:px-5 max-md:py-20"
       id="contato"
     >
       <div className="flex flex-col gap-5 pb-10 w-full items-center">
         <h2 className="font-black text-4xl max-md:text-center max-md:text-2xl">
           {" "}
-          <span className=" text-yellow-300 pr-3">{`{`}</span>CONTATO{" "}
-          <span className=" text-yellow-300">{`}`}</span>
+          <span className=" text-primary pr-3">{`{`}</span>CONTATO{" "}
+          <span className=" text-primary">{`}`}</span>
         </h2>
         <p className="max-md:text-center">
           Gostou do meu trabalho? Vamos conversar!
@@ -74,7 +74,7 @@ export function Contact() {
           rel="noopener noreferrer"
           className="cursor-pointer hover:scale-105 transform transition duration-300 ease-in-out"
         >
-          <div className="project flex items-center justify-center gap-2 border-2 border-zinc-200 cursor-pointer p-4 rounded-2xl">
+          <div className="project flex items-center justify-center gap-2 border-2 border-gray-200 cursor-pointer p-4 rounded-2xl">
             <FaWhatsapp size={20} />
             <p>WhatsApp</p>
           </div>
@@ -84,7 +84,7 @@ export function Contact() {
           <div
             onClick={copiarEmail}
             style={{ cursor: "pointer" }}
-            className="project flex items-center justify-center gap-2 border-2 border-zinc-200 cursor-pointer p-4 rounded-2xl hover:scale-105 transform transition duration-300 ease-in-out"
+            className="project flex items-center justify-center gap-2 border-2 border-gray-200 cursor-pointer p-4 rounded-2xl hover:scale-105 transform transition duration-300 ease-in-out"
           >
             <FiSend />
             <h5>{email}</h5>

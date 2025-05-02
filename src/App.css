@@ -13,21 +13,21 @@
 
 .LineAbout{
   height: 60px;
-  background: #ffe400;
+  background: #9758ED;
   box-shadow: 0px 52px 0px #ffffff;
   border-radius: 50px;
 }
 
 .active {
-  border-bottom: 2px solid #FFE400;
+  border-bottom: 2px solid #9758ED;
 }
 
 .filterYellow{
-  filter: drop-shadow(16px 12px 0px #ffe400);
+  filter: drop-shadow(16px 12px 0px #9758ED);
 }
 
 .filterYellow2{
-  filter: drop-shadow(0px 4px 0px #ffe400);
+  filter: drop-shadow(0px 4px 0px #9758ED);
 }
 
 @keyframes borderAnimationYellow {
@@ -35,7 +35,7 @@
     border-color: rgba(82, 82, 82, 0.5);
   }
   50% {
-    border-color: #FFE400;
+    border-color: #9758ED;
   }
   100% {
     border-color: rgba(82, 82, 82, 0.5);

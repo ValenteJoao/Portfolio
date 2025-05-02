@@ -120,13 +120,13 @@ export function Projects() {
   return (
     <div
       id="projetos"
-      className="flex flex-col items-center bg-zinc-950 px-32 py-32 max-md:px-5 max-md:py-20"
+      className="flex flex-col items-center bg-gray-900 px-32 py-32 max-md:px-5 max-md:py-20"
     >
       <div className="flex flex-col gap-2 pb-20 w-full items-center max-md:pb-14">
         <h2 className="font-black text-4xl max-md:text-center max-md:text-2xl">
           {" "}
-          <span className=" text-yellow-300 pr-3">{`{`}</span>TRABALHOS E
-          PROJETOS <span className=" text-yellow-300">{`}`}</span>
+          <span className=" text-primary pr-3">{`{`}</span>TRABALHOS E
+          PROJETOS <span className=" text-primary">{`}`}</span>
         </h2>
       </div>
 

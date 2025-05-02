@@ -47,14 +47,13 @@ function App() {
       <Footer />
       <ToastContainer />
       <div
-        className={`fixed bottom-8 right-8 max-md:right-1/2 max-md:translate-x-1/2 transition-opacity duration-500 ease-in-out transform ${
-          btnUp ? "opacity-100 scale-105" : "opacity-0 scale-75"
-        }`}
+        className={`fixed bottom-8 right-8 max-md:right-1/2 max-md:translate-x-1/2 transition-opacity duration-500 ease-in-out transform ${btnUp ? "opacity-100 scale-105" : "opacity-0 scale-75"
+          }`}
       >
         {btnUp && (
           <a
             onClick={() => scrollToPages("inicio")}
-            className="flex flex-col items-center size-12 justify-center bg-yellow-300 rounded-full cursor-pointer hover:scale-105 transform transition duration-300 ease-in-out"
+            className="flex flex-col items-center size-12 justify-center bg-primary rounded-full cursor-pointer hover:scale-105 transform transition duration-300 ease-in-out"
           >
             <FaArrowUp size={14} style={{ fill: "#090E16" }} />{" "}
           </a>

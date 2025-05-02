@@ -8,7 +8,10 @@ export default {
     extend: {
       backgroundImage:{
         "bg-video-bk": "url('https://github.com/ValenteJoao/Portfolio/blob/main/src/assets/bg-site-black.gif?raw=true')",
-      }
+      },
+      colors: {
+        "primary": "#9758ED",
+      },
     },
   },
   plugins: [],

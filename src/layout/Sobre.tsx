@@ -5,19 +5,19 @@ export function About() {
   return (
     <section
       id="QuemSouEu"
-      className="flex flex-col bg-zinc-900 items-center justify-center h-full max-md:px-5 px-32 max-md:py-20 py-32"
+      className="flex flex-col bg-gray-950 items-center justify-center h-full max-md:px-5 px-32 max-md:py-20 py-32"
     >
       <div className="flex flex-col items-center gap-2 max-md:pb-14 pb-20">
         <h2 className="font-black max-md:text-2xl text-4xl max-md:text-center">
           {" "}
-          <span className=" text-yellow-300 pr-3">{`{`}</span>QUEM SOU EU ?{" "}
-          <span className=" text-yellow-300 pr-3">{`}`}</span>
+          <span className=" text-primary pr-3">{`{`}</span>QUEM SOU EU ?{" "}
+          <span className=" text-primary pr-3">{`}`}</span>
         </h2>
       </div>
 
       <div className="max-md:flex-col flex justify-between gap-40 max-md:gap-14">
         <div className="flex justify-around text-sm gap-5 max-md:w-full w-1/2">
-          <div className="LineAbout w-20"></div>
+          <div className="LineAbout w-10"></div>
           <div className="flex flex-col gap-8">
             <p className="text-sm">
               Sou um desenvolvedor <strong>Front-End</strong> apaixonado por
@@ -67,7 +67,7 @@ export function About() {
             <SkillsContainers skill="DOCKER" />
           </div>
 
-          <div className="flex items-center justify-evenly mt-8 w-36 h-14 bg-zinc-700 rounded-3xl filterYellow">
+          <div className="flex items-center justify-evenly mt-8 w-36 h-14 bg-gray-700 rounded-3xl filterYellow">
             <a
               href="https://www.linkedin.com/in/jo%C3%A3o-vitor-valente/"
               target="_blank"
