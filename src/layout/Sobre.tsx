@@ -63,6 +63,8 @@ export function About() {
             <SkillsContainers skill="FIREBASE" />
             <SkillsContainers skill="SUPABASE" />
             <SkillsContainers skill="POSTGRESQL" />
+            <SkillsContainers skill="SQL SERVER" />
+            <SkillsContainers skill="DOCKER" />
           </div>
 
           <div className="flex items-center justify-evenly mt-8 w-36 h-14 bg-zinc-700 rounded-3xl filterYellow">

@@ -55,7 +55,7 @@ export function Projects() {
       id: 6,
       nome: "Sistema de Gerenciamento de Vagas - 2MS",
       descricao:
-        "Sistema completo de recrutamento com análise via Inteligência Artificial. Criei a interface e estrutura backend com Fastify, React, Tailwind e SQL Server. Automatiza cadastros, entrevistas e avaliações de candidatos.",
+        "Sistema completo de recrutamento com análise via IA. Criei a interface e estrutura backend com Fastify, React, Tailwind e SQL Server. Automatiza cadastros, entrevistas e avaliações de candidatos.",
       foto: vagas,
       tecnologia1: "Fastify",
       tecnologia2: "IA",
