@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 
 import scrollDown from "../animations/scrollDown.json";
-import fotoPerfil from "../assets/fotoPerfil.png";
+import fotoPerfil2 from "../assets/fotoJoao.jpg";
 import whatsappIcon from "../assets/zap-w.svg";
 
 export function Home() {
@@ -12,7 +12,7 @@ export function Home() {
       className="flex flex-col bg-gradient-to-b from-gray-950 to-[#12061e] items-center justify-center h-screen max-md:px-5 px-24 max-md:py-20 py-24 gap-10 bg-cover shadow-lg"
     >
       <div className="flex-col text-center flex gap-0 items-center justify-center w-full mt-20">
-        <img src={fotoPerfil} alt="Foto de Perfil" className="max-w-32" />
+        <img src={fotoPerfil2} alt="Foto de Perfil" className="max-w-32" />
         <div
           className="max-md:items-center flex flex-col max-md:gap-10 gap-4 mt-5
         "
