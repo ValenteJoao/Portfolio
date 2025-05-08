@@ -10,6 +10,7 @@ import mmg from "../assets/mmg.jpg";
 import achabitos from "../assets/ac-habitos.png";
 import empresa2ms from "../assets/2ms.png";
 import vagas from "../assets/vagas-2ms.png";
+import churchsync from "../assets/churchsync.jpeg";
 import Loader from "../components/loader";
 
 export function Projects() {
@@ -18,6 +19,16 @@ export function Projects() {
   const [loading, setLoading] = useState(true);
 
   const projetosCode: Projeto[] = [
+    {
+      id: 8,
+      nome: "ChurchSync",
+      descricao:
+        "Sistema de gerenciamento de igrejas. Desenvolvido com React e Fastify, proporcionando uma interface intuitiva e eficiente para administradores de igrejas.",
+      foto: churchsync,
+      tecnologia1: "Full Stack",
+      tecnologia2: "Em Desenvolvimento",
+      link: "",
+    },
     {
       id: 2,
       nome: "Massa Bruta - Red Bull",
