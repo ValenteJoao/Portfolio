@@ -27,7 +27,7 @@ export function Projects() {
       foto: churchsync,
       tecnologia1: "Full Stack",
       tecnologia2: "Em Desenvolvimento",
-      link: "",
+      link: "https://www.churchsync.com.br",
     },
     {
       id: 2,
