@@ -34,7 +34,7 @@ export function Contact() {
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-t from-dark-900/50 to-dark-950/50"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl"></div>
-      
+
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         {/* Section Header */}
         <div className="mb-16 animate-fadeInUp">
@@ -45,7 +45,7 @@ export function Contact() {
             Entre em <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">contato</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Gostou do meu trabalho? Tenho uma ideia incrível? Vamos conversar e transformar sua visão em realidade!
+            Gostou do meu trabalho? Tem uma ideia incrível? Vamos conversar e transformar sua visão em realidade!
           </p>
         </div>
 
