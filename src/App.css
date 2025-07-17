@@ -171,11 +171,11 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background: #9758ED !important;
+  background: #6366f1!important;
   opacity: 0.4;
 }
 
 .swiper-pagination-bullet-active {
-  background: #9758ED !important;
+  background: #6366f1!important;
   opacity: 1;
 }
