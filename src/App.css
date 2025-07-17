@@ -68,3 +68,63 @@
 .Toastify__toast-body > div{
   color: black !important;
 }
+
+/* Customização das setas do Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  width: 28px !important;
+  height: 28px !important;
+  font-size: 18px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important;
+}
+
+/* Posiciona as setas do Swiper para fora do carrossel */
+.swiper-button-next {
+  right: 0px !important;
+}
+
+.swiper-button-prev {
+  left: 0px !important;
+}
+
+@media (max-width: 1024px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    right: 0 !important;
+    left: 0 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+/* Adicione padding lateral ao container do Swiper */
+.swiper {
+  padding-left: 1.8rem !important;
+  padding-right: 1.8rem !important;
+}
+
+.swiper-pagination {
+  margin-top: 2rem !important;
+  bottom: 0 !important;
+  position: relative !important;
+}
+
+.swiper-pagination-bullet {
+  background: #9758ED !important;
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  background: #9758ED !important;
+  opacity: 1;
+}
