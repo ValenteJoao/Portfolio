@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import { FaLaptopCode } from "react-icons/fa";
-import { ButtonNav } from "../components/btnType";
 import { ContentProject } from "../components/Projects";
 import { ProjectModal } from "../components/ProjectModal";
 
@@ -23,7 +21,6 @@ import 'swiper/css/pagination';
 
 export function Projects() {
   const [projetos, setProjetos] = useState<Projeto[]>([]);
-  const [buttonMenu, setButtonMenu] = useState(true);
   const [loading, setLoading] = useState(true);
   const [selectedProject, setSelectedProject] = useState<Projeto | null>(null);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -129,9 +126,6 @@ export function Projects() {
     },
   ];
 
-
-  const projetosFigma: Projeto[] = [];
-
   const handleProjectClick = (projeto: Projeto) => {
     setSelectedProject(projeto);
     setIsModalOpen(true);
@@ -141,16 +135,6 @@ export function Projects() {
     setIsModalOpen(false);
     setSelectedProject(null);
   };
-
-  function touchableMenu(type: string) {
-    if (type === "code") {
-      setProjetos(projetosCode);
-      setButtonMenu(true);
-    } else {
-      setProjetos(projetosFigma);
-      setButtonMenu(false);
-    }
-  }
 
   useEffect(() => {
     setTimeout(() => {
@@ -216,9 +200,9 @@ export function Projects() {
           </Swiper>
         </div>
       )}
-      
+
       {/* Project Modal */}
-      <ProjectModal 
+      <ProjectModal
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         project={selectedProject}
