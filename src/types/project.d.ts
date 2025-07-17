@@ -7,4 +7,5 @@ interface Projeto {
   tecnologia2: string;
   tecnologia3?: string;
   link: string;
+  github?: string;
 }

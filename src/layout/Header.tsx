@@ -33,61 +33,61 @@ export function Header() {
   }
 
   return (
-    <header className="flex items-center justify-between h-20 px-6 md:px-24 fixed z-10 w-full shadow-md bg-gray-950">
+    <header className="flex items-center justify-between h-16 px-6 md:px-12 fixed z-50 w-full backdrop-blur-md bg-dark-950/80 border-b border-white/5">
       <div className="flex items-center">
-        <h1 className="text-xl font-black text-white">
-          <span className="text-primary pr-3">{`{`}</span>
-          JOÃO VALENTE
-          <span className="text-primary pl-3">{`}`}</span>
+        <h1 className="text-lg font-bold text-white tracking-tight">
+          <span className="text-primary font-mono">&lt;</span>
+          <span className="mx-2">João Valente</span>
+          <span className="text-primary font-mono">/&gt;</span>
         </h1>
       </div>
 
       {/* Botão do Menu Hambúrguer */}
       <button
-        className="md:hidden text-white focus:outline-none"
+        className="md:hidden text-white focus:outline-none p-2 rounded-lg hover:bg-white/10 transition-colors"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+        {isMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
       </button>
 
       {/* Menu de Navegação */}
       <nav
         className={`${isMenuOpen ? "flex" : "hidden"
-          } md:flex flex-col md:flex-row gap-6 text-white absolute md:static top-20 left-0 w-full md:w-auto bg-gray-950 md:bg-transparent p-6 md:p-0`}
+          } md:flex flex-col md:flex-row gap-1 md:gap-4 text-white absolute md:static top-16 left-0 w-full md:w-auto bg-dark-950/95 md:bg-transparent backdrop-blur-md md:backdrop-blur-none p-6 md:p-0 border-b border-white/5 md:border-none`}
       >
         <a
           onClick={() => scrollToPages("inicio")}
           className={`${activeSection === "inicio"
-            ? "md:border-b-2 md:border-primary"
-            : ""
-            } cursor-pointer hover:border-b-2 hover:border-primary hover:transition-all`}
+            ? "text-primary bg-primary/10"
+            : "text-gray-300 hover:text-white"
+            } cursor-pointer px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/5`}
         >
-          Inicio
+          Início
         </a>
         <a
           onClick={() => scrollToPages("QuemSouEu")}
           className={`${activeSection === "QuemSouEu"
-            ? "md:border-b-2 md:border-primary"
-            : ""
-            } cursor-pointer hover:border-b-2 hover:border-primary hover:transition-all`}
+            ? "text-primary bg-primary/10"
+            : "text-gray-300 hover:text-white"
+            } cursor-pointer px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/5`}
         >
-          Quem sou eu
+          Sobre
         </a>
         <a
           onClick={() => scrollToPages("projetos")}
           className={`${activeSection === "projetos"
-            ? "md:border-b-2 md:border-primary"
-            : ""
-            } cursor-pointer hover:border-b-2 hover:border-primary hover:transition-all`}
+            ? "text-primary bg-primary/10"
+            : "text-gray-300 hover:text-white"
+            } cursor-pointer px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/5`}
         >
           Projetos
         </a>
         <a
           onClick={() => scrollToPages("contato")}
           className={`${activeSection === "contato"
-            ? "md:border-b-2 md:border-primary"
-            : ""
-            } cursor-pointer hover:border-b-2 hover:border-primary hover:transition-all`}
+            ? "text-primary bg-primary/10"
+            : "text-gray-300 hover:text-white"
+            } cursor-pointer px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/5`}
         >
           Contato
         </a>

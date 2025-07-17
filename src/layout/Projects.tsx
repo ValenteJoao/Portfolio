@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import { ButtonNav } from "../components/btnType";
 import { ContentProject } from "../components/Projects";
+import { ProjectModal } from "../components/ProjectModal";
 
 import bahia from "../assets/bahia.png";
 import redbull from "../assets/redbull.png";
@@ -24,6 +25,8 @@ export function Projects() {
   const [projetos, setProjetos] = useState<Projeto[]>([]);
   const [buttonMenu, setButtonMenu] = useState(true);
   const [loading, setLoading] = useState(true);
+  const [selectedProject, setSelectedProject] = useState<Projeto | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   const projetosCode: Projeto[] = [
     {
@@ -129,6 +132,16 @@ export function Projects() {
 
   const projetosFigma: Projeto[] = [];
 
+  const handleProjectClick = (projeto: Projeto) => {
+    setSelectedProject(projeto);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
+
   function touchableMenu(type: string) {
     if (type === "code") {
       setProjetos(projetosCode);
@@ -143,7 +156,7 @@ export function Projects() {
     setTimeout(() => {
       setProjetos(projetosCode);
       setLoading(false);
-    }, 4000);
+    }, 2000);
   }, []);
 
   return (
@@ -151,23 +164,16 @@ export function Projects() {
       id="projetos"
       className="flex flex-col items-center bg-[#090e18] px-32 py-32 max-md:px-5 max-md:py-20"
     >
-      <div className="flex flex-col gap-2 pb-20 w-full items-center max-md:pb-14">
-        <h2 className="font-black text-4xl max-md:text-center max-md:text-xl">
-          {" "}
-          <span className=" text-primary pr-3">{`{`}</span>TRABALHOS E
-          PROJETOS <span className=" text-primary">{`}`}</span>
+      <div className="text-center mb-16 md:mb-20 animate-fadeInUp">
+        <p className="text-primary font-medium text-sm md:text-base tracking-wider uppercase mb-4">
+          Meu portfólio
+        </p>
+        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          Projetos & <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Trabalhos</span>
         </h2>
-      </div>
-
-      <div className="flex flex-row w-full items-center justify-center gap-2">
-        <ButtonNav
-          status={false}
-          click={() => touchableMenu("code")}
-          activeButton={buttonMenu}
-          name="Code"
-          icon={<FaLaptopCode fill="white" size={15} />}
-        />
-
+        <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+          Uma seleção dos meus melhores projetos, desde aplicações web modernas até sistemas complexos.
+        </p>
       </div>
 
       {loading ? (
@@ -192,10 +198,9 @@ export function Projects() {
           >
             {projetos.map((projeto) => (
               <SwiperSlide key={projeto.id}>
-                <a
-                  href={projeto.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <div
+                  onClick={() => handleProjectClick(projeto)}
+                  className="cursor-pointer"
                 >
                   <ContentProject
                     nome={projeto.nome}
@@ -205,12 +210,19 @@ export function Projects() {
                     tecnologia2={projeto.tecnologia2}
                     tecnologia3={projeto.tecnologia3}
                   />
-                </a>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       )}
+      
+      {/* Project Modal */}
+      <ProjectModal 
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        project={selectedProject}
+      />
     </div>
   );
 }

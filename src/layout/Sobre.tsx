@@ -5,98 +5,126 @@ export function About() {
   return (
     <section
       id="QuemSouEu"
-      className="flex flex-col bg-gray-950 items-center justify-center h-full max-md:px-5 px-32 max-md:py-20 py-32"
+      className="relative bg-dark-900 py-20 md:py-32 px-6 md:px-12 overflow-hidden"
     >
-      <div className="flex flex-col items-center gap-2 max-md:pb-14 pb-20">
-        <h2 className="font-black max-md:text-2xl text-4xl max-md:text-center">
-          {" "}
-          <span className=" text-primary pr-3">{`{`}</span>QUEM SOU EU ?{" "}
-          <span className=" text-primary pr-3">{`}`}</span>
-        </h2>
-      </div>
+      {/* Background Effects */}
+      <div className="absolute inset-0 bg-gradient-to-b from-dark-950/50 to-dark-800/50"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
 
-      <div className="max-md:flex-col flex justify-between gap-40 max-md:gap-14">
-        <div className="flex justify-around text-sm gap-5 max-md:w-full w-1/2">
-          <div className="LineAbout w-10"></div>
-          <div className="flex flex-col gap-8">
-            <p className="text-sm">
-              Sou um desenvolvedor <strong>Full Stack</strong> apaixonado por
-              tecnologia e design, sempre buscando criar{" "}
-              <strong>experiências</strong> digitais que realmente façam a
-              diferença. Adoro transformar ideias em interfaces bonitas,
-              intuitivas e cheias de funcionalidade. Se você curte ver códigos,
-              dê uma passada no meu <strong>GitHub</strong>. Lá,
-              compartilho o que ando criando e resolvendo no dia a dia.
-              Dá uma olhada para conhecer meu estilo e como gosto de trabalhar.
-              Estou sempre disponível para novos{" "}
-              <strong>desafios</strong>, então se tiver algum projeto bacana em
-              mente, bora conversar!
-            </p>
-            <p className="text-sm">
-              Atualmente atuo como desenvolvedor front end pela a empresa{" "}
-              <strong>2Morrow Sports</strong> realizando a manutenção e
-              desenvolvimento de novas features para o sistema de gestão de
-              socios torcedores dos clubes de futebol.
-            </p>
-          </div>
+      <div className="relative z-10 max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16 md:mb-20 animate-fadeInUp">
+          <p className="text-primary font-medium text-sm md:text-base tracking-wider uppercase mb-4">
+            Conheça mais
+          </p>
+          <h2 className="text-3xl md:text-5xl font-bold text-white">
+            Sobre <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">mim</span>
+          </h2>
         </div>
 
-        <div className="max-md:w-full max-md:items-center max-md:px-5 w-1/2 flex flex-col gap-6">
-          <h3 className="text-lg font-black max-md:w-full">Skills</h3>
-
-          <div className="flex flex-wrap gap-1">
-            <SkillsContainers skill="HTML" />
-            <SkillsContainers skill="CSS" />
-            <SkillsContainers skill="JAVASCRIPT" />
-            <SkillsContainers skill="TYPESCRIPT" />
-            <SkillsContainers skill="REACT" />
-            <SkillsContainers skill="REACT NATIVE" />
-            <SkillsContainers skill="NEXT.JS" />
-            <SkillsContainers skill="NODE JS" />
-            <SkillsContainers skill="C#" />
-            <SkillsContainers skill=".NET" />
-            <SkillsContainers skill="ASP.NET" />
-            <SkillsContainers skill="GIT" />
-            <SkillsContainers skill="GITHUB" />
-            <SkillsContainers skill="FIGMA" />
-            <SkillsContainers skill="FIREBASE" />
-            <SkillsContainers skill="SUPABASE" />
-            <SkillsContainers skill="POSTGRESQL" />
-            <SkillsContainers skill="SQL SERVER" />
-            <SkillsContainers skill="DOCKER" />
+        {/* Main Content */}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          {/* About Text */}
+          <div className="space-y-8 animate-slideInLeft">
+            <div className="relative">
+              <div className="LineAbout w-16 mb-8"></div>
+              <div className="space-y-6">
+                <p className="text-gray-300 text-lg leading-relaxed">
+                  Sou um desenvolvedor <span className="text-primary font-semibold">Full Stack</span> apaixonado por
+                  tecnologia e design, sempre buscando criar{" "}
+                  <span className="text-primary font-semibold">experiências</span> digitais que realmente façam a
+                  diferença. Adoro transformar ideias em interfaces bonitas,
+                  intuitivas e cheias de funcionalidade.
+                </p>
+                <p className="text-gray-300 text-lg leading-relaxed">
+                  Se você curte ver códigos, dê uma passada no meu{" "}
+                  <span className="text-primary font-semibold">GitHub</span>. Lá,
+                  compartilho o que ando criando e resolvendo no dia a dia.
+                  Estou sempre disponível para novos{" "}
+                  <span className="text-primary font-semibold">desafios</span>, então se tiver algum projeto bacana em
+                  mente, bora conversar!
+                </p>
+                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-xl p-6">
+                  <p className="text-gray-300 text-base leading-relaxed">
+                    Atualmente atuo como desenvolvedor front end na{" "}
+                    <span className="text-primary font-semibold">2Morrow Sports</span>, realizando a manutenção e
+                    desenvolvimento de novas features para o sistema de gestão de
+                    sócios torcedores dos clubes de futebol.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="flex items-center justify-evenly mt-8 w-36 h-14 bg-gray-700 rounded-3xl filterYellow">
-            <a
-              href="https://www.linkedin.com/in/jo%C3%A3o-vitor-valente/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer hover:scale-105 transform transition duration-300 ease-in-out"
-            >
-              <FaLinkedin
-                size={22}
-                style={{ fill: "white", cursor: "pointer" }}
-              />
-            </a>
-            <a
-              href="https://github.com/ValenteJoao"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer hover:scale-105 transform transition duration-300 ease-in-out"
-            >
-              <FaGithub
-                size={22}
-                style={{ fill: "white", cursor: "pointer" }}
-              />
-            </a>
-            <a
-              href="https://vimeo.com/user172878477"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer hover:scale-105 transform transition duration-300 ease-in-out"
-            >
-              <FaVimeo size={22} style={{ fill: "white", cursor: "pointer" }} />
-            </a>
+          {/* Skills & Social */}
+          <div className="space-y-8 animate-fadeInUp">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-6">
+                Tecnologias & <span className="text-primary">Skills</span>
+              </h3>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <SkillsContainers skill="HTML" />
+                <SkillsContainers skill="CSS" />
+                <SkillsContainers skill="JAVASCRIPT" />
+                <SkillsContainers skill="TYPESCRIPT" />
+                <SkillsContainers skill="REACT" />
+                <SkillsContainers skill="REACT NATIVE" />
+                <SkillsContainers skill="NEXT.JS" />
+                <SkillsContainers skill="NODE JS" />
+                <SkillsContainers skill="C#" />
+                <SkillsContainers skill=".NET" />
+                <SkillsContainers skill="ASP.NET" />
+                <SkillsContainers skill="GIT" />
+                <SkillsContainers skill="GITHUB" />
+                <SkillsContainers skill="FIGMA" />
+                <SkillsContainers skill="FIREBASE" />
+                <SkillsContainers skill="SUPABASE" />
+                <SkillsContainers skill="POSTGRESQL" />
+                <SkillsContainers skill="SQL SERVER" />
+                <SkillsContainers skill="DOCKER" />
+              </div>
+            </div>
+
+            {/* Social Links */}
+            <div className="pt-8 max-lg:text-center flex flex-col w-full max-lg:items-center">
+              <h4 className="text-lg font-semibold text-white mb-4">Conecte-se comigo</h4>
+              <div className="flex gap-4">
+                <a
+                  href="https://www.linkedin.com/in/jo%C3%A3o-vitor-valente/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group p-4 bg-white/5 border border-white/10 rounded-xl hover:border-primary/50 hover:bg-primary/10 transition-all duration-300"
+                >
+                  <FaLinkedin
+                    size={24}
+                    className="text-gray-400 group-hover:text-primary transition-colors duration-300"
+                  />
+                </a>
+                <a
+                  href="https://github.com/ValenteJoao"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group p-4 bg-white/5 border border-white/10 rounded-xl hover:border-primary/50 hover:bg-primary/10 transition-all duration-300"
+                >
+                  <FaGithub
+                    size={24}
+                    className="text-gray-400 group-hover:text-primary transition-colors duration-300"
+                  />
+                </a>
+                <a
+                  href="https://vimeo.com/user172878477"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group p-4 bg-white/5 border border-white/10 rounded-xl hover:border-primary/50 hover:bg-primary/10 transition-all duration-300"
+                >
+                  <FaVimeo
+                    size={24}
+                    className="text-gray-400 group-hover:text-primary transition-colors duration-300"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
