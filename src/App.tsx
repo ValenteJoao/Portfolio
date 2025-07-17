@@ -47,7 +47,7 @@ function App() {
       <Footer />
       <ToastContainer />
       <div
-        className={`fixed bottom-8 right-8 max-md:right-1/2 max-md:translate-x-1/2 transition-opacity duration-500 ease-in-out transform ${btnUp ? "opacity-100 scale-105" : "opacity-0 scale-75"
+        className={`fixed z-50 bottom-8 right-8 max-md:right-1/2 max-md:translate-x-1/2 transition-opacity duration-500 ease-in-out transform ${btnUp ? "opacity-100 scale-105" : "opacity-0 scale-75"
           }`}
       >
         {btnUp && (
