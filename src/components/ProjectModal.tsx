@@ -56,7 +56,7 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
     if (isOpen) {
       document.addEventListener("keydown", handleEscape);
       document.body.style.overflow = "hidden";
-      
+
       // Adicionar estilos customizados do scroll
       const styleElement = document.createElement('style');
       styleElement.textContent = scrollStyles;
@@ -67,7 +67,7 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
     return () => {
       document.removeEventListener("keydown", handleEscape);
       document.body.style.overflow = "unset";
-      
+
       // Remover estilos customizados
       const styleElement = document.getElementById('modal-scroll-styles');
       if (styleElement) {
@@ -79,13 +79,13 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
   if (!isOpen || !project) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-fadeInUp">
+    <div className="fixed inset-0 z-[1000] flex items-center justify-center p-4 animate-fadeInUp">
       {/* Backdrop */}
-      <div 
+      <div
         className="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity duration-300"
         onClick={onClose}
       />
-      
+
       {/* Modal */}
       <div className="custom-scrollbar relative bg-dark-900 border border-white/10 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-300 scale-100 opacity-100 shadow-2xl shadow-primary/10">
         {/* Header */}
@@ -103,8 +103,8 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
         <div className="p-6 space-y-6">
           {/* Project Image */}
           <div className="relative overflow-hidden rounded-xl">
-            <img 
-              src={project.foto} 
+            <img
+              src={project.foto}
               alt={project.nome}
               className="w-full h-64 md:h-80 object-cover"
             />
@@ -146,7 +146,7 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
               <FaExternalLinkAlt size={16} />
               Ver Projeto
             </a>
-            
+
             {project.github && (
               <a
                 href={project.github}

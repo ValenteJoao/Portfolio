@@ -1,6 +1,3 @@
-import Lottie from "lottie-react";
-
-import scrollDown from "../animations/scrollDown.json";
 import fotoPerfil2 from "../assets/fotoJoao.jpg";
 import whatsappIcon from "../assets/zap-w.svg";
 
@@ -66,15 +63,6 @@ export function Home() {
             </a>
           </div>
         </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
-        <Lottie
-          animationData={scrollDown}
-          loop={true}
-          className="h-12 w-12 opacity-60"
-        />
       </div>
     </main>
   );
