@@ -1,4 +1,4 @@
-import fotoPerfil2 from "../assets/fotoJoao.jpg";
+import fotoPerfil2 from "../assets/fotoJoao.png";
 import whatsappIcon from "../assets/zap-w.svg";
 
 export function Home() {
