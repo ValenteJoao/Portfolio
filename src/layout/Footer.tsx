@@ -1,4 +1,5 @@
 export function Footer() {
+  const anoAtual = new Date().getFullYear();
   return (
     <footer className="relative bg-dark-950 border-t border-white/5 py-12 md:py-16">
       {/* Background Effects */}
@@ -25,7 +26,7 @@ export function Footer() {
           {/* Copyright */}
           <div className="pt-6">
             <p className="text-gray-500 text-sm">
-              © 2025 João Valente. Todos os direitos reservados.
+              © {anoAtual} João Valente. Todos os direitos reservados.
             </p>
             <p className="text-gray-600 text-xs mt-2">
               Desenvolvido com ❤️ usando React & TypeScript

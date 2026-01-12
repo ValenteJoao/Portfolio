@@ -1,17 +1,34 @@
 import fotoPerfil2 from "../assets/fotoJoao.png";
 import whatsappIcon from "../assets/zap-w.svg";
+import LiquidEther from "../components/LiquidEther";
 
 export function Home() {
 
   return (
     <main
       id="inicio"
-      className="relative flex flex-col bg-gradient-to-br from-dark-950 via-dark-900 to-dark-800 items-center justify-center min-h-screen px-6 md:px-12 py-20 pt-28 overflow-hidden"
+      className="relative flex flex-col items-center justify-center min-h-screen px-6 md:px-12 py-20 pt-28 overflow-hidden"
     >
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-secondary/5"></div>
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      {/* Background */}
+      <div className="absolute inset-0 z-0">
+      <LiquidEther
+        colors={[ '#7A60F4', '#9B85F7', '#5A40D4' ]}
+        mouseForce={20}
+        cursorSize={100}
+        isViscous={false}
+        viscous={30}
+        iterationsViscous={32}
+        iterationsPoisson={32}
+        resolution={0.5}
+        isBounce={false}
+        autoDemo={true}
+        autoSpeed={0.5}
+        autoIntensity={2.2}
+        takeoverDuration={0.25}
+        autoResumeDelay={100}
+        autoRampDuration={0.6}
+      />
+      </div>
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto animate-fadeInUp">
         {/* Profile Image */}
@@ -39,8 +56,7 @@ export function Home() {
           </div>
 
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Transformo ideias em experiências digitais incríveis.
-            Especializado em criar soluções web modernas e intuitivas.
+          Crio sites e soluções web modernas e intuitivas para quem busca uma presença digital marcante e sem complicações.
           </p>
 
           {/* CTA Buttons */}

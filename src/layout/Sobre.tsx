@@ -8,7 +8,7 @@ export function About() {
       className="relative bg-dark-900 py-20 md:py-32 px-6 md:px-12 overflow-hidden"
     >
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-950/50 to-dark-800/50"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-dark-950/70 to-dark-800/70"></div>
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
