@@ -9,15 +9,14 @@ import mmg from "../assets/mmg.jpg";
 import achabitos from "../assets/ac-habitos.png";
 import empresa2ms from "../assets/2ms.png";
 import vagas from "../assets/vagas-2ms.png";
-import churchsync from "../assets/churchsync.jpeg";
+import tareflo from "../assets/tareflo.png";
 import Loader from "../components/loader";
-import todo from "../assets/todo-list.png";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export function Projects() {
   const [projetos, setProjetos] = useState<Projeto[]>([]);
@@ -28,24 +27,14 @@ export function Projects() {
   const projetosCode: Projeto[] = [
     {
       id: 8,
-      nome: "ChurchSync",
+      nome: "Tareflo",
       descricao:
-        "Sistema de gerenciamento de igrejas. Desenvolvido com React e Fastify, proporcionando uma interface intuitiva e eficiente para administradores de igrejas.",
-      foto: churchsync,
+        "Organize suas tarefas, notas e produtividade com o Tareflo. Uma plataforma simples, rápida e eficiente projetada para otimizar seu dia a dia.",
+      foto: tareflo,
       tecnologia1: "Full Stack",
-      tecnologia2: "Em Desenvolvimento",
-      link: "https://www.churchsync.com.br",
-    },
-    {
-      id: 9,
-      nome: "Todo List",
-      descricao:
-        "Todo List com React, TypeScript, Tailwind, Fastify. Desenvolvido com foco em performance e usabilidade.",
-      foto: todo,
-      tecnologia1: "Full Stack",
-      tecnologia2: "NodeJs",
-      tecnologia3: "API",
-      link: "https://todo.valenteprojetos.com.br/",
+      tecnologia2: "React",
+      tecnologia3: "Fastify",
+      link: "https://www.tareflo.com.br/",
     },
     {
       id: 2,
@@ -153,10 +142,14 @@ export function Projects() {
           Meu portfólio
         </p>
         <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-          Projetos & <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Trabalhos</span>
+          Projetos &{" "}
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            Trabalhos
+          </span>
         </h2>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
-          Uma seleção dos meus melhores projetos, desde aplicações web modernas até sistemas complexos.
+          Uma seleção dos meus melhores projetos, desde aplicações web modernas
+          até sistemas complexos.
         </p>
       </div>
 
