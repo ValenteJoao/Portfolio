@@ -10,6 +10,8 @@ import achabitos from "../assets/ac-habitos.png";
 import empresa2ms from "../assets/2ms.png";
 import vagas from "../assets/vagas-2ms.png";
 import tareflo from "../assets/tareflo.png";
+import telog from "../assets/telog.png";
+import boxguard from "../assets/box-guard.png";
 import Loader from "../components/loader";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -25,6 +27,17 @@ export function Projects() {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   const projetosCode: Projeto[] = [
+    {
+      id: 9,
+      nome: "Telog - Site Institucional",
+      descricao:
+        "Site institucional da Telog, empresa de logística com mais de 25 anos de mercado. Desenvolvido com Next.js, TypeScript e Tailwind, com foco em performance, SEO e experiência moderna.",
+      foto: telog,
+      tecnologia1: "NextJs",
+      tecnologia2: "Tailwind",
+      tecnologia3: "Typescript",
+      link: "https://telog.com.br/",
+    },
     {
       id: 8,
       nome: "Tareflo",
@@ -46,6 +59,17 @@ export function Projects() {
       tecnologia2: "UI/UX",
       tecnologia3: ".Net",
       link: "https://www.massabruta.com.br/",
+    },
+    {
+      id: 10,
+      nome: "Box Guard",
+      descricao:
+        "Projeto de estudo para controle de estoque de forma simples e segura. Autenticação via Google e dados em tempo real com Firebase, com interface moderna e responsiva.",
+      foto: boxguard,
+      tecnologia1: "React",
+      tecnologia2: "Firebase",
+      tecnologia3: "Tailwind",
+      link: "https://box-guard.vercel.app/",
     },
     {
       id: 1,
