@@ -12,6 +12,7 @@ import vagas from "../assets/vagas-2ms.png";
 import tareflo from "../assets/tareflo.png";
 import telog from "../assets/telog.png";
 import boxguard from "../assets/box-guard.png";
+import agenlife from "../assets/agenlife.png";
 import Loader from "../components/loader";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -28,6 +29,17 @@ export function Projects() {
 
   const projetosCode: Projeto[] = [
     {
+      id: 11,
+      nome: "Agenlife",
+      descricao:
+        "Plataforma SaaS de gestão para psicólogos, nutricionistas, fisioterapeutas e clínicas: agenda online, prontuário eletrônico, financeiro, recibos e atestados. Projeto full stack com Next.js, PostgreSQL (Drizzle ORM), NextAuth, Stripe e Cloudflare R2, com deploy em Docker.",
+      foto: agenlife,
+      tecnologia1: "Full Stack",
+      tecnologia2: "NextJs",
+      tecnologia3: "PostgreSQL",
+      link: "https://www.agenlife.com.br/",
+    },
+    {
       id: 9,
       nome: "Telog - Site Institucional",
       descricao:
@@ -42,7 +54,7 @@ export function Projects() {
       id: 8,
       nome: "Tareflo",
       descricao:
-        "Organize suas tarefas, notas e produtividade com o Tareflo. Uma plataforma simples, rápida e eficiente projetada para otimizar seu dia a dia.",
+        "Tarefas, quadros e documentos no mesmo lugar. O Tareflo junta lista de tarefas, Kanban, notas e relatório de horas em um só espaço, com etiquetas que valem em tudo. Plataforma full stack simples e rápida para organizar o dia a dia.",
       foto: tareflo,
       tecnologia1: "Full Stack",
       tecnologia2: "React",
