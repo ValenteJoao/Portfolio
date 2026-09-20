@@ -40,7 +40,7 @@ interface ProjectModalProps {
     tecnologia1: string;
     tecnologia2: string;
     tecnologia3?: string;
-    link: string;
+    link?: string;
     github?: string;
   } | null;
 }
@@ -58,9 +58,9 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
       document.body.style.overflow = "hidden";
 
       // Adicionar estilos customizados do scroll
-      const styleElement = document.createElement('style');
+      const styleElement = document.createElement("style");
       styleElement.textContent = scrollStyles;
-      styleElement.id = 'modal-scroll-styles';
+      styleElement.id = "modal-scroll-styles";
       document.head.appendChild(styleElement);
     }
 
@@ -69,7 +69,7 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
       document.body.style.overflow = "unset";
 
       // Remover estilos customizados
-      const styleElement = document.getElementById('modal-scroll-styles');
+      const styleElement = document.getElementById("modal-scroll-styles");
       if (styleElement) {
         document.head.removeChild(styleElement);
       }
@@ -113,7 +113,9 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
 
           {/* Description */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-white">Sobre o Projeto</h3>
+            <h3 className="text-xl font-semibold text-white">
+              Sobre o Projeto
+            </h3>
             <p className="text-gray-300 leading-relaxed text-lg">
               {project.descricao}
             </p>
@@ -121,7 +123,9 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
 
           {/* Technologies */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-white">Tecnologias Utilizadas</h3>
+            <h3 className="text-xl font-semibold text-white">
+              Tecnologias Utilizadas
+            </h3>
             <div className="flex flex-wrap gap-3">
               {project.tecnologia1 === "Em Desenvolvimento" ? (
                 <SkillsProject classname="green" skill={project.tecnologia1} />
@@ -136,29 +140,33 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-6">
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 bg-primary hover:bg-primary/80 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25"
-            >
-              <FaExternalLinkAlt size={16} />
-              Ver Projeto
-            </a>
+          {(project.link || project.github) && (
+            <div className="flex flex-col sm:flex-row gap-4 pt-6">
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3 bg-primary hover:bg-primary/80 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25"
+                >
+                  <FaExternalLinkAlt size={16} />
+                  Ver Projeto
+                </a>
+              )}
 
-            {project.github && (
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105"
-              >
-                <FaGithub size={16} />
-                Ver Código
-              </a>
-            )}
-          </div>
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105"
+                >
+                  <FaGithub size={16} />
+                  Ver Código
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>

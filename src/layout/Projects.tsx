@@ -114,7 +114,6 @@ export function Projects() {
       tecnologia1: "Fastify",
       tecnologia2: "IA",
       tecnologia3: "SQLServer",
-      link: "https://corp.2morrowsports.com.br/login",
     },
     {
       id: 3,
