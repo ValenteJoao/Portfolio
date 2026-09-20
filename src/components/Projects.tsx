@@ -18,9 +18,9 @@ export function ContentProject({
   tecnologia3,
 }: projectProps) {
   return (
-    <div className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/10">
+    <div className="group relative h-full flex flex-col bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/10">
       {/* Project Image */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden shrink-0">
         <img 
           src={foto} 
           alt={nome}
@@ -30,9 +30,9 @@ export function ContentProject({
       </div>
       
       {/* Content */}
-      <div className="p-6 space-y-4">
+      <div className="p-6 flex flex-col flex-1 gap-4">
         <div className="space-y-3">
-          <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors duration-300 line-clamp-2">
+          <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors duration-300 line-clamp-2 min-h-[3.5rem]">
             {nome}
           </h3>
           <p className="text-gray-400 text-sm leading-relaxed line-clamp-3 group-hover:text-gray-300 transition-colors duration-300">
@@ -41,7 +41,7 @@ export function ContentProject({
         </div>
 
         {/* Technologies */}
-        <div className="flex flex-wrap gap-2 pt-2">
+        <div className="flex flex-wrap gap-2 pt-2 mt-auto pr-10">
           {tecnologia1 === "Em Desenvolvimento" ? (
             <SkillsProject classname="green" skill={tecnologia1} />
           ) : (

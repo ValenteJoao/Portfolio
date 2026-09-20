@@ -210,10 +210,10 @@ export function Projects() {
             className="w-full max-w-7xl"
           >
             {projetos.map((projeto) => (
-              <SwiperSlide key={projeto.id}>
+              <SwiperSlide key={projeto.id} className="!h-auto">
                 <div
                   onClick={() => handleProjectClick(projeto)}
-                  className="cursor-pointer"
+                  className="cursor-pointer h-full"
                 >
                   <ContentProject
                     nome={projeto.nome}
