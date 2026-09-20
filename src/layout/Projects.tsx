@@ -54,11 +54,11 @@ export function Projects() {
       id: 8,
       nome: "Tareflo",
       descricao:
-        "Tarefas, quadros e documentos no mesmo lugar. O Tareflo junta lista de tarefas, Kanban, notas e relatório de horas em um só espaço, com etiquetas que valem em tudo. Plataforma full stack simples e rápida para organizar o dia a dia.",
+        "Tarefas, quadros e documentos no mesmo lugar. O Tareflo junta lista de tarefas, Kanban, notas e relatório de horas em um só espaço, com etiquetas que valem em tudo. Projeto full stack com Next.js, Prisma e PostgreSQL, autenticação com better-auth, Redis, Stripe e arquivos no Cloudflare R2.",
       foto: tareflo,
       tecnologia1: "Full Stack",
-      tecnologia2: "React",
-      tecnologia3: "Fastify",
+      tecnologia2: "NextJs",
+      tecnologia3: "PostgreSQL",
       link: "https://www.tareflo.com.br/",
     },
     {
